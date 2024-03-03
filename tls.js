@@ -990,12 +990,12 @@ if (cluster.isMaster) {
         cluster.fork();
         console.clear()
     }
-    console.log('\x1b[38;2;255;0;0m' + 'PARMAR DDOS PANEL '.bgRed);
+    console.log('\x1b[38;2;255;0;0m' + 'PARMAR DDOS PANEL '.bgWhite);
     console.log(`═════════╩═════════════════════════════════╩═════════`.gray)
-    console.log('\x1b[38;2;255;0;0m' + `Url:` + process.argv[2].rainbow)
-    console.log('\x1b[38;2;255;0;0m' + `Time:` + process.argv[3].rainbow)
-    console.log('\x1b[38;2;255;0;0m' + `Rate:` + process.argv[4].rainbow)
-    console.log('\x1b[38;2;255;0;0m' + `Threads:` + process.argv[5].rainbow)
+    console.log('\x1b[38;2;255;0;0m' + `Url:` + process.argv[2].green)
+    console.log('\x1b[38;2;255;0;0m' + `Time:` + process.argv[3].green)
+    console.log('\x1b[38;2;255;0;0m' + `Rate:` + process.argv[4].green)
+    console.log('\x1b[38;2;255;0;0m' + `Threads:` + process.argv[5].green)
     console.log(`═════════╔═════════════════════════════════╔═════════`.gray)
     setTimeout(() => {}, process.argv[5] * 1000);
     for (let counter = 1; counter <= args.threads; counter++) {
